@@ -5,25 +5,35 @@
 -->
 <html lang='en-US'>
     <head>
-        <title>Travis</title>
+        <title>Travis Personal Site | INST377</title>
         <meta charset='UTF-8'>
         <link rel="stylesheet" href='css.css'>
     </head>
     <body style='text-align: center'>
         <h1 style='color:gray' style="font-size:40px;">Welcome</h1>
         <h2>This is my starter website</h2>
-        <img src='travis.jpg' alt='Travis, tag = img' width="300" height="220">
+        <img src='travis.jpg' alt='Travis, tag = img' width="300" height="220" style='float: right;'>
         <br>
-        <a href='bio.html'>Biography/Social</a>
+        <section>
+            <nav>
+                    <div class='social'>
+                            <a href='https://www.facebook.com/travis.johnson.520357'>Facebook</a>
+                    </div>
+                    <br>
+                    <div class='social'>
+                            <a href='https://www.instagram.com/teeravj/'>Instagram</a>
+                    </div>
+                    <br>    
+                    <div class='social'>
+                            <a href='https://www.reddit.com/user/teeravj'>Reddit</a>
+                    </div>
+                    <br>
+                    <div class='social'>
+                            <a href='https://www.discogs.com/user/teeravj/collection'>Discogs</a>
+                    </div>
+            </nav>
+        </section>
         <br>
-        <button type='button' onclick='dateTime()'>Click for Date and Time</button>
-        <p id='datetime'>Date and Time</p>
-        <script>
-            function dateTime(){
-                n =  new Date();
-                document.getElementById("datetime").innerHTML = n.toLocaleDateString() + ' ' + n.toLocaleTimeString();
-            }
-        </script>
         <address style='text-align: left'>
             Travis Johnson 
             <br>
@@ -42,6 +52,15 @@
             <li><abbr title='Information Studies'>INST</abbr>362</li>
             <li><abbr title='Information Studies'>INST</abbr>346</li>
         </ul></i>
+        <button type='button' onclick='dateTime()' style='float: right;'>Click for Date and Time</button>
+        <br>
+        <p id='datetime' style='text-align: right'>Date and Time</p>
+        <script>
+            function dateTime(){
+                n =  new Date();
+                document.getElementById("datetime").innerHTML = n.toLocaleDateString() + ' ' + n.toLocaleTimeString();
+            }
+        </script>
         <hr>
         <a href='https://www.w3schools.com'>Link to Tutorial</a>
     </body>
