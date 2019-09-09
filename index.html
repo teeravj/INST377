@@ -14,19 +14,34 @@
         <h2>This is my starter website</h2>
         <img src='travis.jpg' alt='Travis, tag = img' width="300" height="220">
         <br>
+        <a href='bio.html'>Biography/Social</a>
+        <br>
+        <button type='button' onclick='dateTime()'>Click for Date and Time</button>
+        <p id='datetime'>Date and Time</p>
+        <script>
+            function dateTime(){
+                n =  new Date();
+                document.getElementById("datetime").innerHTML = n.toLocaleDateString() + ' ' + n.toLocaleTimeString();
+            }
+        </script>
+        <address style='text-align: left'>
+            Travis Johnson 
+            <br>
+            8700 Boteler Lane 
+            <br>
+            College Park, MD 20740
+        </address>
+        <br>
+        <div style='text-align: left'>Undergraduate at the University of Maryland, College Park</div>
         <b><p style='text-align: left'>Current Course List</p></b>
         <i><ul style='text-align: left'>
+            <li><abbr title='Philosophy'>PHIL</abbr>170</li>
+            <li><abbr title='American Studies'>AMST</abbr>101</li>
             <li><abbr title='Information Studies'>INST</abbr>462</li>
-            <li><abbr title='Classics'>CLAS</abbr>311</li>
             <li><abbr title='Information Studies'>INST</abbr>377</li>
             <li><abbr title='Information Studies'>INST</abbr>362</li>
             <li><abbr title='Information Studies'>INST</abbr>346</li>
-            <li><abbr title='Philosophy'>PHIL</abbr>170</li>
         </ul></i>
-        <address style='text-align: left'>
-            Travis Johnson at
-            University of Maryland
-        </address>
         <hr>
         <a href='https://www.w3schools.com'>Link to Tutorial</a>
     </body>
