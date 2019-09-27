@@ -10,58 +10,38 @@
         <link rel="stylesheet" href='css.css'>
     </head>
     <body>
-        <h1>Welcome</h1>
-        <h2>This is my starter website</h2>
-        <img src='travis.jpg' alt='Travis' width="300" height="220" style='float: right;'>
-        <br>
-        <section>
-            <nav>
-                    <div class='social'>
-                            <a href='https://www.facebook.com/travis.johnson.520357'>Facebook</a>
-                    </div>
-                    <br>
-                    <div class='social'>
-                            <a href='https://www.instagram.com/teeravj/'>Instagram</a>
-                    </div>
-                    <br>    
-                    <div class='social'>
-                            <a href='https://www.reddit.com/user/teeravj'>Reddit</a>
-                    </div>
-                    <br>
-                    <div class='social'>
-                            <a href='https://www.discogs.com/user/teeravj/collection'>Discogs</a>
-                    </div>
-            </nav>
-        </section>
-        <br>
-        <address style='text-align: left'>
-            Travis Johnson 
-            <br>
-            8700 Boteler Lane 
-            <br>
-            College Park, MD 20740
-        </address>
-        <br>
-        <div style='text-align: left'>Undergraduate at the University of Maryland, College Park</div>
-        <b><p style='text-align: left'>Current Course List</p></b>
-        <i><ul style='text-align: left'>
-            <li><abbr title='Philosophy'>PHIL</abbr>170</li>
-            <li><abbr title='American Studies'>AMST</abbr>101</li>
-            <li><abbr title='Information Studies'>INST</abbr>462</li>
-            <li><abbr title='Information Studies'>INST</abbr>377</li>
-            <li><abbr title='Information Studies'>INST</abbr>362</li>
-            <li><abbr title='Information Studies'>INST</abbr>346</li>
-        </ul></i>
-        <button type='button' onclick='dateTime()' style='float: right;'>Click for Date and Time</button>
-        <br>
-        <p id='datetime' style='text-align: right'>Date and Time</p>
-        <script>
-            function dateTime(){
-                n =  new Date();
-                document.getElementById("datetime").innerHTML = n.toLocaleDateString() + ' ' + n.toLocaleTimeString();
-            }
-        </script>
-        <hr>
-        <a href='https://www.w3schools.com'>Link to Tutorial</a>
+        <div class='heading'>
+            <h1>Travis Johnson</h1>
+        </div>
+        <div class='content'>
+            <div class='description'>
+                <div class='imageCaption'>
+                    <p>I plan to become a database administrator or work within an IT department. Having previously worked with an IT Department, I would like to continue my work into that field, and possibly move in database administration. I also have a lot of library experience and would highly consider a graduate degree in Library Science through the iSchool if possible.</p>
+                    <img src='travis.jpg'>
+                </div>
+                <p>My hobbies include playing bass in a band (no name yet), music collecting, DJ Mixing/Scratching, and some video games. I am an administrator for UMD Rocket League Club and am also Record Library Manager for the UMD Radio Station, WMUC 88.1. Say hi to me at WMUC above South Campus Dining on Wednesdays from 5-7PM.</p>
+            </div>
+            <div class='social'>
+
+            </div>
+            <div class='workExp'>
+                <h1>Work Experience</h1>
+                <div class='job'>
+                    <h3>UMD Libraries</h3>
+                    <p>Library Media Services and McKeldin Late Night (current)</p>
+                    <p>Desk Circulation tracking transactions and shipments</p>
+                </div>
+                <div class='job'>
+                    <h3>Library of Congress</h3>
+                    <p>Data Analyst Intern</p>
+                    <p>Perform Business Intelligence on Programs and Event Attendes and Success Metrics to help Prioritize Budgets</p>
+                </div>
+                <div class='job'>
+                    <h3>Towson University</h3>
+                    <p>IT and Web Development Intern</p>
+                    <p>Website Redsign for new 2018/2019 Logo, Database Administration, Shell/Image Configuration and Installation, and PC Configuration</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
