@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample HTML Demonstration Page</title>
+    <style>
+        /*
+          Place your fresh CSS styles here to help organize the page
+        */
+
+      .wrapper {
+        width: 60%;
+        height: 100vh;
+        background: grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 25px;
+      }
+
+      .container {
+        background: pink;
+        height: 60px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+      }
+
+      .second_container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+      }
+      .int{
+          display: flex;
+          align-content: center;
+          flex-direction: column;
+          align-content: space-between;
+          background-color: red;
+          margin: 20px;
+      }
+      .third_container {
+        background: lightblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="head" id="start">
+            <h1>Sample Header</h1>
+            <a href='google.com'>anchor tag to nowhere</a>
+      </div>
+      <div class="container">
+              <p>hello</p>
+      </div>
+      <div class="second_container">
+        <div class="int">
+          <p>First</p>
+        </div>
+        <div class="int">
+          <p>Second</p>
+        </div>
+      </div>
+      <div class="third_container">
+            <p>
+              Third
+            </p>
+          </div>
+    </div>
+  </body>
+</html>
